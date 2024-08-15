@@ -1,0 +1,31 @@
+{
+  "name": "@node-texlive-packages/monorepo",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@node-texlive-packages/config": "workspace:^",
+    "@types/node": "~20.0.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "dprint": "^0.47.2",
+    "editorconfig-checker": "^5.1.8",
+    "eslint": "^9.9.0",
+    "git-cliff": "^2.4.0",
+    "syncpack": "^12.4.0",
+    "taze": "^0.16.6",
+    "typescript": "^5.5.4",
+    "vitest": "^1.6.0"
+  },
+  "packageManager": "pnpm@9.7.1",
+  "private": true,
+  "scripts": {
+    "check": "tsc -p packages/tsconfig.json",
+    "dprint": "dprint -c .config/dprint/dprint.jsonc",
+    "fmt": "pnpm run '/^fmt:.*/'",
+    "fmt-check": "pnpm run '/^fmt-check:.*/'",
+    "fmt-check:dprint": "pnpm run dprint check",
+    "fmt-check:editorconfig-checker": "git ls-files -z | xargs -0 ec",
+    "fmt:dprint": "pnpm run dprint fmt",
+    "fmt:syncpack": "syncpack format",
+    "lint": "cd packages && eslint .",
+    "test": "cd packages && vitest"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "depends-txt",
+  "description": "A parser module for TeX Live's DEPENDS.txt file format",
+  "version": "0.1.0",
+  "author": "@teatimeguest",
+  "bugs": "https://github.com/teatimeguest/node-texlive-packages/issues",
+  "dependencies": {
+    "vfile-message": "^4.0.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/teatimeguest/node-texlive-packages/tree/main/packages/depends-txt",
+  "keywords": [
+    "parser",
+    "texlive"
+  ],
+  "license": "MIT",
+  "optionalDependencies": {
+    "@types/unist": "^3.0.3"
+  },
+  "repository": "teatimeguest/node-texlive-packages.git",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "rm -rf dist && pnpm run build",
+    "test": "vitest"
+  },
+  "sideEffects": false,
+  "type": "module"
+}

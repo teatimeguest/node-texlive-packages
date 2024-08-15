@@ -1,0 +1,16 @@
+{
+  "name": "@node-texlive-packages/config",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/strictest": "^2.0.5",
+    "eslint-plugin-n": "^17.9.0",
+    "eslint-plugin-regexp": "^2.6.0",
+    "eslint-plugin-tsdoc": "^0.3.0",
+    "typescript-eslint": "^8.0.0-alpha.39",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "private": true,
+  "type": "module"
+}

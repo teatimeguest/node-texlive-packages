@@ -1,0 +1,768 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`parses 1`] = `
+[
+  {
+    "position": {
+      "end": {
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+    },
+    "type": "Name",
+    "value": "foo",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+      "start": {
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+    },
+    "type": "Name",
+    "value": "bar",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 10,
+        "line": 1,
+        "offset": 9,
+      },
+      "start": {
+        "column": 8,
+        "line": 1,
+        "offset": 7,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "  ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "start": {
+        "column": 10,
+        "line": 1,
+        "offset": 9,
+      },
+    },
+    "type": "Name",
+    "value": "baz",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "start": {
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+    },
+    "type": "NewLine",
+    "value": "",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 5,
+        "line": 2,
+        "offset": 17,
+      },
+      "start": {
+        "column": 1,
+        "line": 2,
+        "offset": 13,
+      },
+    },
+    "type": "Directive",
+    "value": "hard",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 6,
+        "line": 2,
+        "offset": 18,
+      },
+      "start": {
+        "column": 5,
+        "line": 2,
+        "offset": 17,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "	",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 9,
+        "line": 2,
+        "offset": 21,
+      },
+      "start": {
+        "column": 6,
+        "line": 2,
+        "offset": 18,
+      },
+    },
+    "type": "Name",
+    "value": "qux",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 10,
+        "line": 2,
+        "offset": 22,
+      },
+      "start": {
+        "column": 9,
+        "line": 2,
+        "offset": 21,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 2,
+        "line": 3,
+        "offset": 23,
+      },
+      "start": {
+        "column": 1,
+        "line": 3,
+        "offset": 22,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 6,
+        "line": 3,
+        "offset": 27,
+      },
+      "start": {
+        "column": 2,
+        "line": 3,
+        "offset": 23,
+      },
+    },
+    "type": "Directive",
+    "value": "soft",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 7,
+        "line": 3,
+        "offset": 28,
+      },
+      "start": {
+        "column": 6,
+        "line": 3,
+        "offset": 27,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 11,
+        "line": 3,
+        "offset": 32,
+      },
+      "start": {
+        "column": 7,
+        "line": 3,
+        "offset": 28,
+      },
+    },
+    "type": "Name",
+    "value": "quux",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 31,
+        "line": 3,
+        "offset": 52,
+      },
+      "start": {
+        "column": 11,
+        "line": 3,
+        "offset": 32,
+      },
+    },
+    "type": "Comment",
+    "value": "# this is a comment ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 33,
+        "line": 3,
+        "offset": 54,
+      },
+      "start": {
+        "column": 31,
+        "line": 3,
+        "offset": 52,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 2,
+        "line": 4,
+        "offset": 55,
+      },
+      "start": {
+        "column": 1,
+        "line": 4,
+        "offset": 54,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 8,
+        "line": 5,
+        "offset": 62,
+      },
+      "start": {
+        "column": 1,
+        "line": 5,
+        "offset": 55,
+      },
+    },
+    "type": "Directive",
+    "value": "package",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 9,
+        "line": 5,
+        "offset": 63,
+      },
+      "start": {
+        "column": 8,
+        "line": 5,
+        "offset": 62,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 14,
+        "line": 5,
+        "offset": 68,
+      },
+      "start": {
+        "column": 9,
+        "line": 5,
+        "offset": 63,
+      },
+    },
+    "type": "Name",
+    "value": "corge",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 15,
+        "line": 5,
+        "offset": 69,
+      },
+      "start": {
+        "column": 14,
+        "line": 5,
+        "offset": 68,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "	",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 34,
+        "line": 5,
+        "offset": 88,
+      },
+      "start": {
+        "column": 15,
+        "line": 5,
+        "offset": 69,
+      },
+    },
+    "type": "Comment",
+    "value": "# this is a comment",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 35,
+        "line": 5,
+        "offset": 89,
+      },
+      "start": {
+        "column": 34,
+        "line": 5,
+        "offset": 88,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 2,
+        "line": 6,
+        "offset": 90,
+      },
+      "start": {
+        "column": 1,
+        "line": 6,
+        "offset": 89,
+      },
+    },
+    "type": "Comment",
+    "value": "#",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 3,
+        "line": 6,
+        "offset": 91,
+      },
+      "start": {
+        "column": 2,
+        "line": 6,
+        "offset": 90,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 3,
+        "line": 7,
+        "offset": 93,
+      },
+      "start": {
+        "column": 1,
+        "line": 7,
+        "offset": 91,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "  ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 10,
+        "line": 7,
+        "offset": 100,
+      },
+      "start": {
+        "column": 3,
+        "line": 7,
+        "offset": 93,
+      },
+    },
+    "type": "Directive",
+    "value": "package",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 12,
+        "line": 7,
+        "offset": 102,
+      },
+      "start": {
+        "column": 10,
+        "line": 7,
+        "offset": 100,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "  ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 18,
+        "line": 7,
+        "offset": 108,
+      },
+      "start": {
+        "column": 12,
+        "line": 7,
+        "offset": 102,
+      },
+    },
+    "type": "Name",
+    "value": "grault",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 20,
+        "line": 7,
+        "offset": 110,
+      },
+      "start": {
+        "column": 18,
+        "line": 7,
+        "offset": 108,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "  ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 21,
+        "line": 7,
+        "offset": 111,
+      },
+      "start": {
+        "column": 20,
+        "line": 7,
+        "offset": 110,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 5,
+        "line": 8,
+        "offset": 115,
+      },
+      "start": {
+        "column": 1,
+        "line": 8,
+        "offset": 111,
+      },
+    },
+    "type": "Directive",
+    "value": "soft",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 6,
+        "line": 8,
+        "offset": 116,
+      },
+      "start": {
+        "column": 5,
+        "line": 8,
+        "offset": 115,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 12,
+        "line": 8,
+        "offset": 122,
+      },
+      "start": {
+        "column": 6,
+        "line": 8,
+        "offset": 116,
+      },
+    },
+    "type": "Name",
+    "value": "garply",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 13,
+        "line": 8,
+        "offset": 123,
+      },
+      "start": {
+        "column": 12,
+        "line": 8,
+        "offset": 122,
+      },
+    },
+    "type": "Comment",
+    "value": "#",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 15,
+        "line": 8,
+        "offset": 125,
+      },
+      "start": {
+        "column": 13,
+        "line": 8,
+        "offset": 123,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 2,
+        "line": 9,
+        "offset": 126,
+      },
+      "start": {
+        "column": 1,
+        "line": 9,
+        "offset": 125,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": " ",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 7,
+        "line": 9,
+        "offset": 131,
+      },
+      "start": {
+        "column": 2,
+        "line": 9,
+        "offset": 126,
+      },
+    },
+    "type": "Name",
+    "value": "waldo",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 8,
+        "line": 9,
+        "offset": 132,
+      },
+      "start": {
+        "column": 7,
+        "line": 9,
+        "offset": 131,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 8,
+        "line": 10,
+        "offset": 139,
+      },
+      "start": {
+        "column": 1,
+        "line": 10,
+        "offset": 132,
+      },
+    },
+    "type": "Directive",
+    "value": "package",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 9,
+        "line": 10,
+        "offset": 140,
+      },
+      "start": {
+        "column": 8,
+        "line": 10,
+        "offset": 139,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "	",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 14,
+        "line": 10,
+        "offset": 145,
+      },
+      "start": {
+        "column": 9,
+        "line": 10,
+        "offset": 140,
+      },
+    },
+    "type": "Name",
+    "value": "corge",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 17,
+        "line": 10,
+        "offset": 148,
+      },
+      "start": {
+        "column": 14,
+        "line": 10,
+        "offset": 145,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "			",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 18,
+        "line": 10,
+        "offset": 149,
+      },
+      "start": {
+        "column": 17,
+        "line": 10,
+        "offset": 148,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 4,
+        "line": 11,
+        "offset": 152,
+      },
+      "start": {
+        "column": 1,
+        "line": 11,
+        "offset": 149,
+      },
+    },
+    "type": "WhiteSpace",
+    "value": "  	",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 7,
+        "line": 11,
+        "offset": 155,
+      },
+      "start": {
+        "column": 4,
+        "line": 11,
+        "offset": 152,
+      },
+    },
+    "type": "Name",
+    "value": "baz",
+  },
+  {
+    "position": {
+      "end": {
+        "column": 8,
+        "line": 11,
+        "offset": 156,
+      },
+      "start": {
+        "column": 7,
+        "line": 11,
+        "offset": 155,
+      },
+    },
+    "type": "NewLine",
+    "value": "
+",
+  },
+]
+`;

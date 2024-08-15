@@ -1,0 +1,29 @@
+name: Publish
+on:
+  push:
+    tags: ['*/v*.*.*']
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version-file: .node-version
+          registry-url: https://registry.npmjs.org
+      - run: pnpm install
+      - run: |
+          pnpm publish \
+            --no-git-checks \
+            --filter "./packages/${GITHUB_REF_NAME%/v*}"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # https://docs.npmjs.com/generating-provenance-statements#using-third-party-package-publishing-tools
+          # https://github.com/pnpm/pnpm/issues/6607
+          NPM_CONFIG_PROVENANCE: true
+          NPM_CONFIG_ACCESS: public

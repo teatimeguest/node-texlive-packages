@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`deserializes 1`] = `
+Map {
+  undefined => {
+    "hard": Set {
+      "foo",
+      "bar",
+      "baz",
+      "qux",
+    },
+    "soft": Set {
+      "quux",
+    },
+  },
+  "corge" => {
+    "hard": Set {
+      "baz",
+    },
+  },
+  "grault" => {
+    "hard": Set {
+      "waldo",
+    },
+    "soft": Set {
+      "garply",
+    },
+  },
+}
+`;

@@ -1,0 +1,9 @@
+{
+  "extends": "@node-texlive-packages/config/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": true,
+  },
+  "include": ["./src/**/*.ts"],
+}
