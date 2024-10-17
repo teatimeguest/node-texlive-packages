@@ -1,0 +1,702 @@
+{
+  "Asia": {
+    "Thailand": {
+      "https://mirror.kku.ac.th/CTAN/systems/texlive/tlnet/": {
+        "status": "Dead"
+      }
+    },
+    "Singapore": {
+      "https://sg.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Taiwan": {
+      "https://tw.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.mirror.twds.com.tw/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Korea": {
+      "https://mirror.navercorp.com/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.kaist.ac.kr/tex-archive/systems/texlive/tlnet/": {
+        "status": "Dead"
+      },
+      "https://lab.uklee.pe.kr/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://kr.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.kakao.com/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Iran": {
+      "http://ctan.asis.ai/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Saudi Arabia": {
+      "https://sa.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "India": {
+      "https://mirror.niser.ac.in/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://in.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://2.mirrors.in.sahilister.net/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "China": {
+      "https://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.bjtu.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.bfsu.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.sustech.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.cloud.tencent.com/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirror.nyist.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.nju.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirrors.cqu.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Dead"
+      },
+      "https://mirrors.aliyun.com/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirrors.sjtug.sjtu.edu.cn/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.pku.edu.cn/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirrors.hust.edu.cn/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Indonesia": {
+      "http://repo.ugm.ac.id/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirror.unpad.ac.id/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Japan": {
+      "https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Hong Kong": {
+      "https://mirror-hk.koddos.net/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    }
+  },
+  "South America": {
+    "Chile": {
+      "https://ctan.dcc.uchile.cl/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Brazil": {
+      "https://br.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://linorg.usp.br/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    }
+  },
+  "Oceania": {
+    "Australia": {
+      "https://mirror.aarnet.edu.au/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://au.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    }
+  },
+  "North America": {
+    "Canada": {
+      "https://mirror.quantum5.ca/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.csclub.uwaterloo.ca/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ca.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.mirror.rafal.ca/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://muug.ca/mirror/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.its.dal.ca/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.mirror.globo.tech/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Costa Rica": {
+      "https://mirrors.ucr.ac.cr/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "USA": {
+      "https://ctan.math.utah.edu/ctan/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.math.washington.edu/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.math.illinois.edu/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.mirrors.hoobly.com/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.math.princeton.edu/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://us.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "http://mirrors.ibiblio.org/pub/mirrors/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.las.iastate.edu/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    }
+  },
+  "Africa": {
+    "Morocco": {
+      "https://mirror.marwan.ma/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "South Africa": {
+      "https://za.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.ufs.ac.za/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    }
+  },
+  "Europe": {
+    "Greece": {
+      "http://ftp.ntua.gr/mirror/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://fosszone.csd.auth.gr/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://ftp.cc.uoc.gr/mirrors/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Austria": {
+      "https://mirror.easyname.at/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirror.kumi.systems/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Czech Republic": {
+      "https://mirrors.nic.cz/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Norway": {
+      "https://ftp.fagskolen.gjovik.no/pub/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.uib.no/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Finland": {
+      "https://www.nic.funet.fi/pub/TeX/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://www.texlive.info/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.5i.fi/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Spain": {
+      "https://ctan.fisiquimicamente.com/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.javinator9889.com/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Denmark": {
+      "https://mirrors.dotsrc.org/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Netherlands": {
+      "https://nl.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.lyrahosting.com/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.snt.utwente.nl/pub/software/tex/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirror.koddos.net/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Portugal": {
+      "https://ftp.eq.uc.pt/software/TeX/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirrors.up.pt/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Poland": {
+      "https://polish-mirror.evolution-host.com/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://sunsite.icm.edu.pl/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Dead"
+      },
+      "https://ctan.gust.org.pl/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Russia": {
+      "https://ctan.altspu.ru/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.macomnet.net/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.truenetwork.ru/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Italy": {
+      "https://ctan.mirror.garr.it/mirrors/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Romania": {
+      "https://mirrors.nxthost.com/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "United Kingdom": {
+      "https://gb.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://anorien.csc.warwick.ac.uk/mirrors/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirror.apps.cam.ac.uk/pub/tex-archive/systems/texlive/tlnet/": {
+        "status": "Timeout"
+      }
+    },
+    "Sweden": {
+      "https://mirror.accum.se/mirror/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://ftpmirror1.infania.net/mirror/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Hungary": {
+      "https://mirror.szerverem.hu/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Switzerland": {
+      "https://mirror.init7.net/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ch.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.foobar.to/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "France": {
+      "https://texlive.mycozy.space/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirrors.ircam.fr/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.ibcp.fr/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://ctan.tetaneutral.net/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.mines-albi.fr/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://distrib-coffee.ipsl.jussieu.fr/pub/mirrors/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      }
+    },
+    "Germany": {
+      "https://mirror.clientvps.com/CTAN/systems/texlive/tlnet/": {
+        "status": "Dead"
+      },
+      "https://ctan.net/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://markov.htwsaar.de/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://de.mirrors.cicku.me/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.mirror.norbert-ruehl.de/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.rrze.uni-erlangen.de/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.tu-chemnitz.de/pub/tex/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.agdsn.de/pub/mirrors/latex/dante/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.fau.de/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.funkfreundelandshut.de/latex/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.gwdg.de/pub/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://mirror.physik.tu-berlin.de/pub/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "http://vesta.informatik.rwth-aachen.de/ftp/pub/mirror/ctan/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "http://sendinnsky.selfhost.co/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://ctan.mc1.root.project-creative.net/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirror.dogado.de/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ctan.joethei.xyz/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72535
+      },
+      "https://ftp.rrzn.uni-hannover.de/pub/mirror/tex-archive/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Belarus": {
+      "https://mirror.datacenter.by/pub/mirrors/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    },
+    "Bulgaria": {
+      "https://mirrors.neterra.net/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      },
+      "https://mirrors.netix.net/CTAN/systems/texlive/tlnet/": {
+        "status": "Alive",
+        "texlive_version": 2024,
+        "revision": 72529
+      }
+    }
+  }
+}

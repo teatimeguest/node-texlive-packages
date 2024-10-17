@@ -1,5 +1,4 @@
 /// <reference types="vite/client" />
-/// <reference types="vitest/importMeta" />
 import { mergeConfig } from 'vitest/config';
 
 import sharedConfig from '@node-texlive-packages/config/vitest.config.mjs';

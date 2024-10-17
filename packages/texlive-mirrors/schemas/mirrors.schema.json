@@ -1,0 +1,96 @@
+{
+  "$id": "mirrors.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TeXLiveMirrors",
+  "description": "https://github.com/zauguin/texlive-mirrors",
+  "type": "object",
+  "patternProperties": {
+    "^.*$": {
+      "$ref": "#/$defs/continentMirrors"
+    }
+  },
+  "propertyNames": {
+    "$ref": "#/$defs/continentName"
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "continentMirrors": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {
+          "$ref": "#/$defs/countryMirrors"
+        }
+      },
+      "propertyNames": {
+        "$ref": "#/$defs/countryName"
+      },
+      "additionalProperties": false
+    },
+    "continentName": {
+      "type": "string",
+      "examples": ["Asia", "North America"]
+    },
+    "countryMirrors": {
+      "type": "object",
+      "patternProperties": {
+        "^.*$": {
+          "$ref": "#/$defs/mirrorData"
+        }
+      },
+      "propertyNames": {
+        "type": "string",
+        "format": "uri"
+      },
+      "additionalProperties": false
+    },
+    "countryName": {
+      "type": "string",
+      "examples": ["USA", "German"]
+    },
+    "mirrorStatus": {
+      "enum": ["Dead", "Alive", "Timeout"]
+    },
+    "mirrorData": {
+      "type": "object",
+      "oneOf": [
+        {
+          "properties": {
+            "status": {
+              "const": "Dead"
+            }
+          },
+          "required": ["status"]
+        },
+        {
+          "properties": {
+            "status": {
+              "const": "Alive"
+            },
+            "texlive_version": {
+              "$ref": "#/$defs/uinteger",
+              "tsType": "number"
+            },
+            "revision": {
+              "$ref": "#/$defs/uinteger",
+              "tsType": "number"
+            }
+          },
+          "required": ["status", "texlive_version", "revision"]
+        },
+        {
+          "properties": {
+            "status": {
+              "const": "Timeout"
+            }
+          },
+          "required": ["status"]
+        }
+      ],
+      "additionalProperties": false
+    },
+    "uinteger": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

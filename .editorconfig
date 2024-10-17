@@ -9,7 +9,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 spelling_language = en-US
 
-[{*.snap,pnpm-lock.yaml}]
+[{*.snap,pnpm-lock.yaml,**/__snapshots__/**}]
 charset = unset
 end_of_line = unset
 indent_size = unset
