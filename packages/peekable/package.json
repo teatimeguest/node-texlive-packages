@@ -10,6 +10,9 @@
       "import": "./dist/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/teatimeguest/node-texlive-packages/tree/main/packages/peekable",
   "keywords": [
     "iterator",
