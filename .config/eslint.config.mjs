@@ -67,11 +67,6 @@ export const common = defineConfig(
   },
   {
     extends: [n.configs['flat/recommended-module']],
-    settings: {
-      node: {
-        version: '20',
-      },
-    },
     rules: {
       'n/no-missing-import': 'off',
       'n/no-path-concat': 'error',

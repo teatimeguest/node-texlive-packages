@@ -5,8 +5,9 @@
     "trailingCommas": "jsonc",
     "jsonTrailingCommaFiles": [
       "*.jsonc",
-      "tsconfig.build.json",
       "tsconfig.json",
+      "tsconfig.build.json",
+      "tsconfig.workspace.json",
     ],
   },
   "typescript": {

@@ -5,7 +5,6 @@
   ],
   "compilerOptions": {
     "noUnusedParameters": false,
-    "checkJs": false,
     "resolveJsonModule": true,
     "importHelpers": true,
     "newLine": "lf",
@@ -16,4 +15,9 @@
     "verbatimModuleSyntax": true,
     "target": "esnext",
   },
+  "exclude": [
+    "**/coverage",
+    "**/dist",
+    "**/node_modules",
+  ],
 }

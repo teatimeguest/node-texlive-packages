@@ -1,0 +1,11 @@
+{
+  "extends": "@node-texlive-packages/config/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "${configDir}/src",
+    "outDir": "${configDir}/dist",
+    "declaration": true,
+    "sourceMap": true,
+    "tsBuildInfoFile": "${configDir}/node_modules/.tsbuildinfo",
+  },
+  "include": ["${configDir}/src/**/*.ts"],
+}

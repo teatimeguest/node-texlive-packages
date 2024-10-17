@@ -1,0 +1,10 @@
+{
+  "extends": "@node-texlive-packages/config/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+  },
+  "files": [],
+  "references": [
+    { "path": "depends-txt/tsconfig.build.json" },
+  ],
+}

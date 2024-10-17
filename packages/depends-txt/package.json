@@ -7,6 +7,12 @@
   "dependencies": {
     "vfile-message": "^4.0.2"
   },
+  "devDependencies": {
+    "@types/node": "~20.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
