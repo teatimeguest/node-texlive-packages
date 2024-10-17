@@ -1,5 +1,7 @@
 # node-texlive-packages
 
+> TeX Live-related packages for Node.js
+
 [![CI][ci-badge]][ci]
 [![Codecov][codecov-badge]][codecov]
 
@@ -20,3 +22,13 @@
 [depends-txt]: ./packages/depends-txt
 [texlive-mirrors]: ./packages/texlive-mirrors
 [zauguin/texlive-mirrors]: https://github.com/zauguin/texlive-mirrors
+
+## Small Utilities
+
+| Name                     |                 Version                  | Description               |
+| ------------------------ | :--------------------------------------: | ------------------------- |
+| [@teatimeguest/peekable] | [![npm][peekable-version]][peekable-npm] | Make an iterator peekable |
+
+[@teatimeguest/peekable]: ./packages/peekable
+[peekable-npm]: https://www.npmjs.com/package/@teatimeguest/peekable
+[peekable-version]: https://img.shields.io/npm/v/@teatimeguest/peekable?logo=npm&logoColor=959da5&labelColor=2e353b&color=c40000

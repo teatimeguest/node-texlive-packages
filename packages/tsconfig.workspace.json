@@ -6,6 +6,7 @@
   "files": [],
   "references": [
     { "path": "depends-txt/tsconfig.build.json" },
+    { "path": "peekable/tsconfig.build.json" },
     { "path": "texlive-mirrors/tsconfig.build.json" },
   ],
 }

@@ -92,6 +92,8 @@ importers:
         specifier: ~20.0.0
         version: 20.0.0
 
+  packages/peekable: {}
+
   packages/texlive-mirrors:
     devDependencies:
       ajv:

@@ -1,0 +1,27 @@
+{
+  "name": "@teatimeguest/peekable",
+  "description": "Make an iterator peekable",
+  "version": "0.1.0",
+  "author": "@teatimeguest",
+  "bugs": "https://github.com/teatimeguest/node-texlive-packages/issues",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "homepage": "https://github.com/teatimeguest/node-texlive-packages/tree/main/packages/peekable",
+  "keywords": [
+    "iterator",
+    "peekable"
+  ],
+  "license": "MIT",
+  "repository": "teatimeguest/node-texlive-packages.git",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "rm -rf dist && npm run build",
+    "test": "vitest"
+  },
+  "sideEffects": false,
+  "type": "module"
+}
