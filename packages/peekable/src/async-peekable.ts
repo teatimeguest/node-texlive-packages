@@ -4,10 +4,14 @@ export class AsyncPeekableIterator<out T = unknown, out TReturn = unknown>
     AsyncIterable<T, TReturn | undefined, void>
 {
   readonly #peeked: IteratorResult<T, TReturn>[] = [];
-  readonly #it: AsyncIterator<T, TReturn, unknown>;
+  readonly #it:
+    | AsyncIterator<T, TReturn, unknown>
+    | Iterator<T, TReturn, unknown>;
 
-  /** Creates a {@link AsyncPeekableIterator} from an async iterator. */
-  constructor(it: AsyncIterator<T, TReturn, unknown>) {
+  /** Creates a {@link AsyncPeekableIterator} from an (async) iterator. */
+  constructor(
+    it: AsyncIterator<T, TReturn, unknown> | Iterator<T, TReturn, unknown>,
+  ) {
     this.#it = it;
   }
 
@@ -52,11 +56,11 @@ export class AsyncPeekableIterator<out T = unknown, out TReturn = unknown>
   }
 
   /**
-   * Creates a {@link AsyncPeekableIterator} from an async iterator
+   * Creates a {@link AsyncPeekableIterator} from an (async) iterator
    * with better type inference than using the {@link "constructor"}.
    */
   static from<T = unknown, TReturn = unknown>(
-    it: AsyncIterator<T, TReturn, unknown>,
+    it: AsyncIterator<T, TReturn, unknown> | Iterator<T, TReturn, unknown>,
   ): AsyncPeekableIterator<T, TReturn> {
     return new this(it);
   }

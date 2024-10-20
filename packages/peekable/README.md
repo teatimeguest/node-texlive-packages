@@ -83,9 +83,11 @@ export class AsyncPeekableIterator<out T = unknown, out TReturn = unknown>
     AsyncDisposable
 {
   /**
-   * Creates a {@link AsyncPeekableIterator} from an async iterator.
+   * Creates a {@link AsyncPeekableIterator} from an (async) iterator.
    */
-  constructor(it: AsyncIterator<T, TReturn, unknown>);
+  constructor(
+    it: AsyncIterator<T, TReturn, unknown> | Iterator<T, TReturn, unknown>,
+  );
 
   /**
    * Peek the next element without consuming it.
@@ -98,11 +100,11 @@ export class AsyncPeekableIterator<out T = unknown, out TReturn = unknown>
   async peekNth(n: number): Promise<IteratorResult<T, TReturn | undefined>>;
 
   /**
-   * Creates a {@link AsyncPeekableIterator} from an async iterator
+   * Creates a {@link AsyncPeekableIterator} from an (async) iterator
    * with better type inference than using the {@link "constructor"}.
    */
   static from<T = unknown, TReturn = unknown>(
-    it: AsyncIterator<T, TReturn, unknown>,
+    it: AsyncIterator<T, TReturn, unknown> | Iterator<T, TReturn, unknown>,
   ): AsyncPeekableIterator<T, TReturn>;
 }
 ```
