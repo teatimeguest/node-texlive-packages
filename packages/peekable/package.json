@@ -4,10 +4,17 @@
   "version": "0.1.0",
   "author": "@teatimeguest",
   "bugs": "https://github.com/teatimeguest/node-texlive-packages/issues",
+  "engines": {
+    "node": ">=16.11.0"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./esnext": {
+      "types": "./dist/esnext.d.ts",
+      "import": "./dist/esnext.js"
     }
   },
   "files": [

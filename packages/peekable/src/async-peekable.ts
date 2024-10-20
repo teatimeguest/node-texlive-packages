@@ -60,4 +60,14 @@ export class AsyncPeekableIterator<out T = unknown, out TReturn = unknown>
   ): AsyncPeekableIterator<T, TReturn> {
     return new this(it);
   }
+
+  static {
+    if ('asyncDispose' in Symbol && typeof Symbol.asyncDispose === 'symbol') {
+      Object.defineProperty(this.prototype, Symbol.asyncDispose, {
+        value: async function(this: AsyncPeekableIterator): Promise<void> {
+          await this.return();
+        },
+      });
+    }
+  }
 }

@@ -51,4 +51,14 @@ export class PeekableIterator<out T = unknown, out TReturn = unknown>
   ): PeekableIterator<T, TReturn> {
     return new this(it);
   }
+
+  static {
+    if ('dispose' in Symbol && typeof Symbol.dispose === 'symbol') {
+      Object.defineProperty(this.prototype, Symbol.dispose, {
+        value: function(this: PeekableIterator): void {
+          this.return();
+        },
+      });
+    }
+  }
 }

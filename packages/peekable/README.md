@@ -8,7 +8,8 @@
 
 ## Requirements
 
-- TypeScript 5.6 or later.
+- `node >=16.11.0`
+- `typescript >=5.6`
 
 ## Installation
 
@@ -30,6 +31,14 @@ console.assert(it.next().value === 2);
 console.log(it.toArray()); // [ 3, 4, 5 ]
 ```
 
+Or with support for `using`/`await using` declarations:
+
+```typescript
+import { PeekableIterator } from '@teatimeguest/peekable/esnext';
+
+using it = PeekableIterator.from([1, 2, 3, 4, 5].values());
+```
+
 ## API
 
 ### PeekableIterator
@@ -37,18 +46,12 @@ console.log(it.toArray()); // [ 3, 4, 5 ]
 ```typescript
 class PeekableIterator<out T = unknown, out TReturn = unknown>
   extends globalThis.Iterator<T, TReturn | undefined, void>
+  implements Disposable
 {
   /**
    * Creates a {@link PeekableIterator} from an iterator.
    */
   constructor(it: Iterator<T, TReturn, unknown>);
-
-  /**
-   * Iterator protocol implementation.
-   */
-  override next(): IteratorResult<T, TReturn | undefined>;
-  override return(value?: TReturn): IteratorResult<T, TReturn | undefined>;
-  override throw(error?: unknown): IteratorResult<T, TReturn | undefined>;
 
   /**
    * Peek the next element without consuming it.
@@ -76,21 +79,13 @@ class PeekableIterator<out T = unknown, out TReturn = unknown>
 export class AsyncPeekableIterator<out T = unknown, out TReturn = unknown>
   implements
     AsyncIterator<T, TReturn | undefined, void>,
-    AsyncIterable<T, TReturn | undefined, void>
+    AsyncIterable<T, TReturn | undefined, void>,
+    AsyncDisposable
 {
   /**
    * Creates a {@link AsyncPeekableIterator} from an async iterator.
    */
   constructor(it: AsyncIterator<T, TReturn, unknown>);
-
-  /**
-   * Async iterator protocol implementation.
-   */
-  async next(): Promise<IteratorResult<T, TReturn | undefined>>;
-  async return(
-    value?: TReturn,
-  ): Promise<IteratorResult<T, TReturn | undefined>>;
-  async throw(error?: unknown): Promise<IteratorResult<T, TReturn | undefined>>;
 
   /**
    * Peek the next element without consuming it.
@@ -101,11 +96,6 @@ export class AsyncPeekableIterator<out T = unknown, out TReturn = unknown>
    * Peek the n-th element without consuming any elements.
    */
   async peekNth(n: number): Promise<IteratorResult<T, TReturn | undefined>>;
-
-  /**
-   * Async iterable protocol implementation.
-   */
-  [Symbol.asyncIterator](): this;
 
   /**
    * Creates a {@link AsyncPeekableIterator} from an async iterator
