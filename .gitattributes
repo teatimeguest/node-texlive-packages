@@ -4,3 +4,4 @@
 *.snap text eof=lf linguist-language=javascript linguist-generated
 
 pnpm-lock.yaml -diff -merge
+CHANGELOG.md -merge linguist-generated

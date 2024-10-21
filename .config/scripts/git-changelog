@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Generate changelog for the current project
+set -eu
+
+GIT_CLIFF_WORKDIR="$(dirname -- "$(pnpm root -w)")"
+
+export \
+  GIT_CLIFF_WORKDIR \
+  RUST_LOG="${RUST_LOG:-warn}"
+
+prefix="$(realpath --relative-to "${GIT_CLIFF_WORKDIR}" -- "$(npm prefix)")"
+
+git cliff \
+  --config .config/cliff.toml \
+  --include-path "${prefix}/**/*" \
+  "$@"

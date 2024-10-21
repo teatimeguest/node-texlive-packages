@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Bump package version
+set -euo pipefail
+
+# shellcheck disable=SC2154
+export GIT_CLIFF_TAG="v${npm_package_version}"
+# shellcheck disable=SC2154
+tag="${npm_package_name##*/}/${GIT_CLIFF_TAG}"
+
+tarball="$(pnpm pack | tail -n 1)"
+trap 'rm -f -- "${tarball}"' EXIT
+
+tar tzf "${tarball}" | tree --fromfile
+attw "${tarball}" || :
+
+git changelog --strip footer -o CHANGELOG.md
+git add CHANGELOG.md package.json
+git commit -m "chore(release): prepare for ${npm_package_name} ${GIT_CLIFF_TAG}"
+
+git changelog --unreleased --strip all |
+  tail -c +5 | # 5 == $(wc -c <<<$'\n## ')
+  git tag "${tag}" --cleanup=whitespace -F -
+
+git --no-pager show --color --no-patch "${tag}" |
+  sed '/^-----BEGIN/,/^-----END/d'

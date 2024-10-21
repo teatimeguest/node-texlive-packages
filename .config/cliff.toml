@@ -1,0 +1,33 @@
+[changelog]
+header = "# Changelog"
+body = """
+
+## {{ version | default(value="Unreleased") | split(pat="/") | last }}
+{% for group, commits in commits | group_by(attribute="group") %}
+  ### {{ group | striptags }}
+  {% for commit in commits %}
+    - {{ commit.id }} \
+      {% if commit.breaking -%} **BREAKING CHANGE:** {% endif %}\
+      {{ commit.message -}}
+  {% endfor %}
+{% endfor %}
+"""
+footer = ""
+trim = true
+render_always = true
+
+[git]
+conventional_commits = true
+commit_preprocessors = [
+  { pattern = "\\s*\\[skip ci\\]", replace = "" },
+]
+commit_parsers = [
+  { message = "^feat", group = "<1>Features" },
+  { message = "^fix\\(unreleased\\)", skip = true },
+  { message = "^fix", group = "<2>Bug Fixes" },
+  { message = "^perf", group = "<3>Performance Improvements" },
+  { message = "^build\\(deps\\)", group = "<4>Dependency Updates" },
+  { message = ".*", skip = true },
+]
+protect_breaking_commits = true
+tag_pattern = "^[^/]+/v\\d+\\.\\d+\\.\\d+"
