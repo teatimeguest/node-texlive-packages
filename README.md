@@ -25,10 +25,12 @@
 
 ## Small Utilities
 
-| Name                     |                 Version                  | Description               |
-| ------------------------ | :--------------------------------------: | ------------------------- |
-| [@teatimeguest/peekable] | [![npm][peekable-version]][peekable-npm] | Make an iterator peekable |
+| Name                                 |                 Version                  | Description                             |
+| ------------------------------------ | :--------------------------------------: | --------------------------------------- |
+| [@teatimeguest/peekable]             | [![npm][peekable-version]][peekable-npm] | Make an iterator peekable               |
+| [@teatimeguest/vitest-plugin-update] |            :heavy_minus_sign:            | Override config when updating snapshots |
 
 [@teatimeguest/peekable]: ./packages/peekable
+[@teatimeguest/vitest-plugin-update]: ./packages/vitest-plugin-update
 [peekable-npm]: https://www.npmjs.com/package/@teatimeguest/peekable
 [peekable-version]: https://img.shields.io/npm/v/@teatimeguest/peekable?logo=npm&logoColor=959da5&labelColor=2e353b&color=c40000

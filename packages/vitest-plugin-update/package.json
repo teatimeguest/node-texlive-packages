@@ -1,0 +1,30 @@
+{
+  "name": "@teatimeguest/vitest-plugin-update",
+  "description": "Override config when updating snapshots",
+  "version": "0.0.0",
+  "author": "@teatimeguest",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "files": [
+    "./index.mjs"
+  ],
+  "keywords": [
+    "vitest"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@types/node": "*",
+    "vitest": "*"
+  },
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "sideEffects": false,
+  "type": "module"
+}

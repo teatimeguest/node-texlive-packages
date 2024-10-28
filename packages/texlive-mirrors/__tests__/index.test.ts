@@ -14,7 +14,6 @@ const snapshotPath = resolve(
 );
 
 test.runIf(import.meta.env['UPDATE'])('e2e', async () => {
-  // eslint-disable-next-line n/no-unsupported-features/node-builtins
   const response = await fetch(MIRRORS_JSON_URL);
   expect(response.ok).toBe(true);
   const mirrors = await response.text();

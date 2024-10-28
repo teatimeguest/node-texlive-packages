@@ -99,6 +99,9 @@ importers:
 
   packages/texlive-mirrors:
     devDependencies:
+      '@teatimeguest/vitest-plugin-update':
+        specifier: workspace:^
+        version: link:../vitest-plugin-update
       ajv:
         specifier: ^8.17.1
         version: 8.17.1
@@ -108,6 +111,19 @@ importers:
       json-schema-to-typescript:
         specifier: ^15.0.2
         version: 15.0.2
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
+  packages/vitest-plugin-update:
+    dependencies:
+      '@types/node':
+        specifier: '*'
+        version: 20.16.11
+      vitest:
+        specifier: '*'
+        version: 2.1.2(@types/node@20.16.11)
+    devDependencies:
       typescript:
         specifier: ^5.6.3
         version: 5.6.3

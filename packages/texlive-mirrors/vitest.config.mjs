@@ -1,6 +1,6 @@
 import { mergeConfig } from 'vitest/config';
 
 import defaultConfig from '@node-texlive-packages/config/vitest.config.mjs';
-import checkIfUpdating from '@node-texlive-packages/config/vitest/if-updating.mjs';
+import pluginUpdate from '@teatimeguest/vitest-plugin-update';
 
-export default mergeConfig(defaultConfig, { plugins: [checkIfUpdating()] });
+export default mergeConfig(defaultConfig, { plugins: [pluginUpdate()] });
