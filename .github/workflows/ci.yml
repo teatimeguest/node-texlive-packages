@@ -18,6 +18,6 @@ jobs:
       - run: pnpm install
       - run: pnpm run '/^(check|fmt-check|lint|test)$/'
       - if: github.event_name == 'push'
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
