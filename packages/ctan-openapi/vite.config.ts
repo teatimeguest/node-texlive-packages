@@ -83,11 +83,22 @@ export default defineConfig({
           src: 'dist/*.json',
           dest: '',
           rename: (filename) => `${filename}.ts`,
-          transform: (content: string) =>
-            dprint.formatText({
+          transform: (content: string) => {
+            const api = JSON.parse(content);
+            const fields = Object.keys(api).join(',\n');
+            return dprint.formatText({
               filePath: 'openapi.ts',
-              fileText: `export default ${content} as const;`,
-            }),
+              fileText: Object
+                .entries(api)
+                .map(([key, value]) =>
+                  `export const ${key} = ${
+                    JSON.stringify(value, undefined, 2)
+                  } as const;`
+                )
+                .join('\n')
+                + `export default {\n${fields}\n} as const;`,
+            });
+          },
         },
       ],
     }),
