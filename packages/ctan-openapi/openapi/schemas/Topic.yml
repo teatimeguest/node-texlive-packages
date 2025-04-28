@@ -1,0 +1,40 @@
+title: Topic
+description: Information about a topic.
+type: object
+properties:
+  key:
+    type: string
+    description: The key of the topic.
+  details:
+    type: string
+    description: A short descriptive text about the meaning of the topic.
+  packages:
+    type: array
+    items:
+      type: string
+    uniqueItems: true
+    description: >-
+      UNDOCUMENTED.
+
+
+      The list of ids of packages referring to the topic.
+      This attribute is included if the parameter `ref` is set to `true`.
+  references:
+    type: array
+    items:
+      type: string
+    uniqueItems: true
+    description: >-
+      ⚠️ This appears to have been renamed `packages`.
+
+
+      The list of ids of packages referring to the topic.
+      This attribute is included if the parameter `ref` is set to `true`.
+    deprecated: true
+required:
+  - key
+  - details
+examples:
+  cv:
+    value:
+      $ref: ../examples/json/2.0/topic/cv.json

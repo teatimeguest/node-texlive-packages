@@ -1,0 +1,13 @@
+title: PackageAuthor
+type: object
+properties:
+  id:
+    type: string
+    description: The key of the author.
+  active:
+    type: boolean
+    description: UNDOCUMENTED.
+required:
+  - id
+  - active
+description: Information about a package author.

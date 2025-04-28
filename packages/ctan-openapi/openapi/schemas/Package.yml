@@ -1,0 +1,181 @@
+title: Package
+description: Information about a package.
+type: object
+properties:
+  id:
+    type: string
+    description: The unique id of the package.
+  aliases:
+    type: array
+    items:
+      $ref: PackageAlias.yml
+    description: A list of aliases for the package.
+  name:
+    type: string
+    description: The print representation of the package name.
+  caption:
+    type: string
+    description: A short description of the package.
+  authors:
+    type: array
+    items:
+      $ref: PackageAuthor.yml
+    description: The list of authors.
+  copyright:
+    type: array
+    items:
+      $ref: Copyright.yml
+    description: The information about the copyright.
+  license:
+    oneOf:
+      - $ref: LicenseIdentifier.yml
+      - title: LicenseIdentifiers
+        type: array
+        items:
+          $ref: LicenseIdentifier.yml
+    description: The keys of licenses.
+  version:
+    $ref: PackageVersion.yml
+  descriptions:
+    type: array
+    items:
+      $ref: PackageDescription.yml
+    description: Long descriptions of the package.
+  documentation:
+    type: array
+    items:
+      $ref: PackageDocumentation.yml
+    description: List of references to documentation.
+  ctan:
+    type: object
+    properties:
+      path:
+        type: string
+        format: uri-reference
+        description: The relative path of the package in the CTAN tree.
+      file:
+        type: boolean
+        default: false
+        description: >-
+          The indicator that this package consists of a single file only.
+    required:
+      - path
+    description: The location of the package in the CTAN tree.
+  install:
+    oneOf:
+      - type: string
+        format: uri-reference
+        description: >-
+          UNDOCUMENTED.
+
+
+          The location of the package on CTAN
+          relative to the CTAN directory `/install`
+          in form of an installable TDS-compliant zip archive.
+      - type: object
+        properties:
+          path:
+            type: string
+            format: uri-reference
+            description: The path relative to the CTAN directory `/install`.
+        required:
+          - path
+        description: >-
+          ⚠️ This does not seem to be a correct type definition.
+
+
+          The location of the package on CTAN
+          relative to the CTAN directory `/install`
+          in form of an installable TDS-compliant zip archive.
+        deprecated: true
+  miktex:
+    oneOf:
+      - type: string
+        description: >-
+          UNDOCUMENTED.
+
+
+          The name of the package in MiKTeX.
+      - type: object
+        properties:
+          location:
+            type: string
+            description: >-
+              ⚠️ This does not seem to be a correct type definition.
+
+
+              The name of the package in MiKTeX.
+        required:
+          - location
+        deprecated: true
+  texlive:
+    oneOf:
+      - type: string
+        description: >-
+          UNDOCUMENTED.
+
+
+          The name of the package in TeX Live.
+      - type: object
+        properties:
+          location:
+            type: string
+            description: >-
+              ⚠️ This does not seem to be a correct type definition.
+
+
+              The name of the package in TeX Live.
+        deprecated: true
+  index:
+    type: array
+    items:
+      type: string
+    description: A list of extra terms to be indexed for the search.
+  topics:
+    type: array
+    items:
+      type: string
+    description: A list of topics keys for this entry.
+  home:
+    type: string
+    format: uri
+    description: The URL of the home page of the package.
+  support:
+    type: string
+    format: uri
+    description: The URL of the support for the package.
+  announce:
+    type: string
+    format: uri
+    description: The URL of the announcements for the package.
+  bugs:
+    type: string
+    format: uri
+    description: The URL of the bug tracker for the package.
+  repository:
+    type: string
+    format: uri
+    description: The URL of the source code repository for the package.
+  development:
+    type: string
+    format: uri
+    description: The URL of the developer community for the package.
+  also:
+    type: array
+    items:
+      type: string
+    description: UNDOCUMENTED.
+required:
+  - id
+  - name
+  - caption
+  - authors
+  - descriptions
+  - documentation
+examples:
+  tex:
+    value:
+      $ref: ../examples/json/2.0/pkg/tex.json
+  texlive:
+    value:
+      $ref: ../examples/json/2.0/pkg/texlive.json

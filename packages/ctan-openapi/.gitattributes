@@ -1,0 +1,3 @@
+/openapi/examples linguist-generated -diff
+.openapiformatrc linguist-language=yaml
+*.openapiformatrc linguist-language=yaml

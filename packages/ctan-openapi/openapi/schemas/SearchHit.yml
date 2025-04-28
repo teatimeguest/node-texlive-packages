@@ -1,0 +1,17 @@
+title: SearchHit
+type: object
+properties:
+  title:
+    type: string
+    description: The page title of the hit.
+  path:
+    type: string
+    description: The absolute path on the CTAN Portal of the hit.
+  text:
+    type: string
+    description: Some additional text to display.
+required:
+  - title
+  - path
+  - text
+description: Search hit.

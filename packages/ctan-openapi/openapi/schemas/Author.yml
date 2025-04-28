@@ -1,0 +1,77 @@
+title: Author
+description: Information about an author.
+type: object
+properties:
+  key:
+    type: string
+    description: The key of the author.
+  title:
+    type: string
+    deprecated: true
+    description: >-
+      ⚠️ This attribute no longer appears to be available.
+
+
+      The title of the author.
+  givenname:
+    type: string
+    default: ''
+    description: The given name.
+  von:
+    type: string
+    default: ''
+    description: >-
+      The von part of the author's name. It is usually in lower case and has
+      values like _von_, _van_, or _de_.
+  familyname:
+    type: string
+    default: ''
+    description: The family name.
+  junior:
+    type: string
+    default: ''
+    description: >-
+      The junior part of the author's name. It is usually an addition to the
+      name like _jr._, _sr._, or a numeral like _I_, _II_, _III_, _IV_.
+  pseudonym:
+    type: string
+    description: >-
+      The alias name to protect the privacy of an author who requests it.
+  female:
+    type: boolean
+    default: false
+    description: The boolean indicator that the author is female.
+  died:
+    type: boolean
+    description: The indicator that the author is deceased.
+  pkgs:
+    type: array
+    items:
+      type: string
+    deprecated: true
+    description: >-
+      ⚠️ This appears to have been renamed `packages`.
+
+
+      List of ids of packages mentioning the author.
+      This attribute is included if the query parameter `ref` is set to `true`.
+  packages:
+    type: array
+    items:
+      type: string
+    description: >-
+      UNDOCUMENTED.
+
+
+      List of ids of packages mentioning the author.
+      This attribute is included if the query parameter `ref` is set to `true`.
+required:
+  - key
+  - died
+examples:
+  knuth:
+    value:
+      $ref: ../examples/json/2.0/author/knuth.json
+  'knuth?ref=true':
+    value:
+      $ref: ../examples/json/2.0/author/knuth?ref=true.json

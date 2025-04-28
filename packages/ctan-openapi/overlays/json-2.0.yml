@@ -1,0 +1,8 @@
+overlay: 1.0.0
+actions:
+  - target: $.info
+    update:
+      version: '2.0'
+  - target: $.components.schemas.ApiVersion.properties.version
+    update:
+      const: '2.0'

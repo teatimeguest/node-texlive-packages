@@ -1,0 +1,13 @@
+title: PackageAlias
+type: object
+properties:
+  id:
+    type: string
+    description: The id of the alias.
+  name:
+    type: string
+    description: The name of the alias.
+required:
+  - id
+  - name
+description: Information about an alias of the package.

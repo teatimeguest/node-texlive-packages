@@ -1,0 +1,8 @@
+overlay: 1.0.0
+extends: json-1.1.yml
+actions:
+  - target: $.info
+    update:
+      version: '1.0'
+  - target: $.paths[licenses,version]
+    remove: true

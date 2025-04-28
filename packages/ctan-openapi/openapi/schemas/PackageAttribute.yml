@@ -1,0 +1,31 @@
+title: PackageAttribute
+type: string
+enum:
+  - aliases
+  - announce
+  - author
+  - authors
+  - bugs
+  - caption
+  - copyright
+  - ctan
+  - description
+  - descriptions
+  - development
+  - documentation
+  - home
+  - index
+  - install
+  - miktex
+  - name
+  - repository
+  - support
+  - texlive
+  - topic
+  - topics
+  - version
+$comment: >-
+  ⚠️ `authors`, `descriptions`, and `topics` are UNDOCUMENTED.
+
+
+  ⚠️ `author`, `description`, and `topic` do not seem to be valid field names.

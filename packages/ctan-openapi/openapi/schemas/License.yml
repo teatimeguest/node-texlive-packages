@@ -1,0 +1,18 @@
+title: License
+description: Information about a license.
+type: object
+properties:
+  key:
+    allOf:
+      - $ref: LicenseIdentifier.yml
+    description: The key of the license.
+  name:
+    type: string
+    description: The printable name of the license.
+  free:
+    type: boolean
+    description: The indication whether the license is considered free.
+required:
+  - key
+  - name
+  - free

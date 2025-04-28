@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Querying the CTAN Database with JSON
+  description: >-
+    The CTAN provides mean to access the database and
+    retrieve the information in form of JSON responses.
+    Several entities can be queried.
+
+
+    The queries can be sent to the portal
+    in form of a HTTP `GET` or `POST` request with some parameters.
+    The response has the JSON as body.
+    The request URL and parameters as well as the response are
+    described on the detail section.
+externalDocs:
+  url: https://ctan.org/help/json/{version}
+servers:
+  - url: https://ctan.org
+paths:
+  /search/json:
+    $ref: paths/search/json.yml

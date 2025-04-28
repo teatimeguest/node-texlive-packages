@@ -1,0 +1,11 @@
+name: drop
+in: query
+schema:
+  type: array
+  items:
+    $ref: ../schemas/PackageAttribute.yml
+  default: []
+style: form
+explode: false
+description: >-
+  A comma separated list of fields to drop.

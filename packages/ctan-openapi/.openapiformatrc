@@ -1,0 +1,9 @@
+sort: true
+keepComments: true
+lineWidth: 80
+filterSet:
+  unusedComponents:
+    - examples
+    - parameters
+    - responses
+    - schemas

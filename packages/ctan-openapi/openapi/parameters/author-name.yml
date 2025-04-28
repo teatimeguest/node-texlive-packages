@@ -1,0 +1,12 @@
+name: author-name
+in: query
+schema:
+  type: boolean
+  default: false
+description: >-
+  ⚠️ This does not seem to be working.
+
+
+  If the parameter `author-name` can be set to `true`
+  to include the first name and family name of the author as well.
+deprecated: true

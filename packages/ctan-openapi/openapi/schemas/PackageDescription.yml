@@ -1,0 +1,59 @@
+title: PackageDescription
+type: object
+properties:
+  text:
+    type: string
+    description: >-
+      UNDOCUMENTED.
+
+
+      The longer description of the package,
+      which may include HTML markup.
+      An inner tag `<ref>` is
+      used to reference a package with attribute `refid`.
+    examples:
+      texlive:
+        value:
+          $ref: ../examples/json/2.0/pkg/texlive.json#/descriptions/0/text
+  description:
+    type: string
+    description: >-
+      ⚠️ This appears to have been renamed `text`.
+
+
+      The longer description of the package,
+      which may include HTML markup.
+      An inner tag `<ref>` is
+      used to reference a package with attribute `refid`.
+    deprecated: true
+    examples:
+      texlive:
+        value:
+          $ref: ../examples/json/2.0/pkg/texlive.json#/descriptions/0/text
+  language:
+    type:
+      - string
+      - 'null'
+    description: >-
+      UNDOCUMENTED.
+
+
+      The ISO code for the language of the description.
+      Alternately it may be `null` to indicate the default language,
+      i.e. English.
+  lang:
+    type:
+      - string
+      - 'null'
+    description: >-
+      ⚠️ This appears to have been renamed `lang`.
+
+
+      The ISO code for the language of the description.
+      Alternately it may be `null` to indicate the default language,
+      i.e. English.
+    deprecated: true
+    $comment: >-
+      ⚠️ The value of `null` is UNDOCUMENTED.
+description: A long description of a package.
+required: []

@@ -1,0 +1,21 @@
+get:
+  summary: List of Licenses
+  description: >-
+    The list of licenses can be obtained.
+    The licenses contained in this list are
+    ordered ascending on the key of the license.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/licenses
+  parameters:
+    - $ref: ../../../parameters/key.yml
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            title: Licenses
+            type: array
+            items:
+              $ref: ../../../schemas/License.yml
+            description: List of licenses.

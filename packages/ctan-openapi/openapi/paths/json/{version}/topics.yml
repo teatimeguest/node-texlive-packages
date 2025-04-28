@@ -1,0 +1,21 @@
+get:
+  summary: List of Topics
+  description: >-
+    The list of topics can be obtained.
+    The topics contained in this list are
+    ordered ascending on the key of the topic.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/topics
+  parameters:
+    - $ref: ../../../parameters/key.yml
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            title: Topics
+            type: array
+            items:
+              $ref: ../../../schemas/Topic.yml
+            description: List of topics.

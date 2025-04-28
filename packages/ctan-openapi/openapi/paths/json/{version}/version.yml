@@ -1,0 +1,13 @@
+get:
+  summary: Version
+  description: >-
+    The information about the version of the interface can be obtained.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/version
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/ApiVersion.yml

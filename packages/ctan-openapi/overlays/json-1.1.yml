@@ -1,0 +1,20 @@
+overlay: 1.0.0
+extends: json-1.2.yml
+actions:
+  - target: $.info
+    update:
+      version: '1.1'
+  - target: $.components.schemas.ApiVersion.properties.version
+    update:
+      const: '1.1'
+  - target: >-
+      $.components.schemas.Author.properties[female,died]
+    remove: true
+  - target: $.components.schemas.Author.required[?(@ == 'died')]
+    remove: true
+  - target: >-
+      $.components.schemas.Package.properties[support,announce,bugs,repositories,development]
+    remove: true
+  - target: >-
+      $.components.schemas.PackageAttribute.enum[?(@.match(/^support|announce|bugs|repositories|development$/))]
+    remove: true

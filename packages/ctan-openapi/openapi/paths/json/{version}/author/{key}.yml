@@ -1,0 +1,39 @@
+get:
+  summary: Author
+  description: >-
+    The information about a single author can be obtained.
+
+
+    Note that the authors information does not contain
+    the email address of the author to protect the privacy.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/author
+  parameters:
+    - name: key
+      in: path
+      description: >-
+        The key of the author as used by CTAN.
+        Those keys are also listed
+        in the [list of authors](#/paths/~1json~1{version}~1authors/get).
+      required: true
+      schema:
+        type: string
+        examples:
+          knuth:
+            value: knuth
+    - name: ref
+      in: query
+      description: >-
+        Requests the list of packages in which the author is mentioned.
+      schema:
+        type: boolean
+        default: false
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../schemas/Author.yml
+    '404':
+      $ref: ../../../../responses/NotFound.yml

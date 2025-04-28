@@ -1,0 +1,7 @@
+name: keep-url
+in: query
+schema:
+  type: boolean
+  default: false
+description: >-
+  Always keeps valid URLs as attributes, instead of `ctan:`-prefixed ones.

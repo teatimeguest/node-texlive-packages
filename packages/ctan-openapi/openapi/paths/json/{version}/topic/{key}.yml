@@ -1,0 +1,42 @@
+get:
+  summary: Topic
+  description: >-
+    The information about a single topic can be obtained.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/topic
+  parameters:
+    - name: key
+      in: path
+      required: true
+      schema:
+        type: string
+        examples:
+          abbrev:
+            value: abbrev
+          cv:
+            value: cv
+      description: >-
+        The key of the topic as used by CTAN.
+        Those keys are also listed
+        in the [list of topics](#/paths/~1json~1{version}~1topics/get).
+    - name: ref
+      in: query
+      schema:
+        type: boolean
+        default: false
+      description: >-
+        Requests the list of packages in which the topic is mentioned.
+        In this case the attribute `packages` contains a list of package keys.
+        The keys are unique ~~and sorted alphabetically~~.
+
+
+        ⚠️ Package keys do not seem to be sorted.
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../schemas/Topic.yml
+    '404':
+      $ref: ../../../../responses/NotFound.yml

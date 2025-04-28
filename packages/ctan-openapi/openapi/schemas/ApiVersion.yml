@@ -1,0 +1,10 @@
+title: ApiVersion
+description: The information about the version of the interface.
+type: object
+properties:
+  version:
+    type: string
+    description: The version number as string.
+required:
+  - version
+additionalProperties: false

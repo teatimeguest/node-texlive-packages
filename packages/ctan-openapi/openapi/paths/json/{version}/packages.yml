@@ -1,0 +1,20 @@
+get:
+  summary: List of Packages
+  description: >-
+    The list of packages can be obtained.
+    The packages contained in this list are
+    ordered ascending on the key of the packages.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/packages
+  parameters:
+    - $ref: ../../../parameters/key.yml
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../../../schemas/PackageSummary.yml
+            description: List of package summaries.

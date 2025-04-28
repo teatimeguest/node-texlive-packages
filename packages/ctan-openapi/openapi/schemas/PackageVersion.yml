@@ -1,0 +1,11 @@
+title: PackageVersion
+type: object
+properties:
+  number:
+    type: string
+    description: The version number.
+  date:
+    type: string
+    description: The version date.
+minProperties: 1
+description: Information about the version of a package.

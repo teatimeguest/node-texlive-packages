@@ -1,0 +1,13 @@
+overlay: 1.0.0
+extends: json-2.0.yml
+actions:
+  - target: $.info
+    update:
+      version: '1.3'
+  - target: $.components.schemas.ApiVersion.properties.version
+    update:
+      const: '1.3'
+  - target: $.components.schemas.Package.properties.aliases
+    remove: true
+  - target: $.components.schemas.PackageAttribute.enum[?(@ == 'aliases')]
+    remove: true

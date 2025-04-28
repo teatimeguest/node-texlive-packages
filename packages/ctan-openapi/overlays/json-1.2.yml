@@ -1,0 +1,11 @@
+overlay: 1.0.0
+extends: json-1.3.yml
+actions:
+  - target: $.info
+    update:
+      version: '1.2'
+  - target: $.components.schemas.ApiVersion.properties.version
+    update:
+      const: '1.2'
+  - target: $.components.schemas.Author.properties[title,von,junior,pseudonym]
+    remove: true

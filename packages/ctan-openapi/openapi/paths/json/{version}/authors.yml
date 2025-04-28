@@ -1,0 +1,25 @@
+get:
+  summary: List of Authors
+  description: >-
+    The list of authors can be obtained.
+    The authors contained in this list are
+    ordered ascending on the key of the author.
+
+
+    Note that the authors information does not contain
+    the email address of the author to protect the privacy.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/authors
+  parameters:
+    - $ref: ../../../parameters/key.yml
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            title: Authors
+            type: array
+            items:
+              $ref: ../../../schemas/Author.yml
+            description: List of authors.

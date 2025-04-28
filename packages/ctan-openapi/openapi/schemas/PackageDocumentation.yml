@@ -1,0 +1,35 @@
+title: PackageDocumentation
+type: object
+properties:
+  language:
+    type:
+      - string
+      - 'null'
+    description: >-
+      UNDOCUMENTED.
+
+
+      The ISO code for the language of the description.
+  lang:
+    type:
+      - string
+      - 'null'
+    description: >-
+      ⚠️ This appears to have been renamed `language`.
+
+
+      The ISO code for the language of the description.
+    deprecated: true
+    $comment: >-
+      ⚠️ The value of `null` is UNDOCUMENTED.
+  details:
+    type: string
+    description: The (English) text describing this documentation item.
+  href:
+    type: string
+    format: uri
+    description: >-
+      A reference to the documentation. The prefix `ctan:` indicates a reference
+      to a directory on CTAN. If the parameter `keep-url` is `true` then this
+      attribute contains always a valid URL without the `ctan:` prefix.
+required: []

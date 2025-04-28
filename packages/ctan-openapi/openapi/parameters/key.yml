@@ -1,0 +1,6 @@
+name: key
+in: query
+schema:
+  type: string
+description: >-
+  If set, only items with keys starting with the given string will be returned.

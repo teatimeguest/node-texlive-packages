@@ -1,0 +1,32 @@
+get:
+  summary: Package
+  description: >-
+    The information about a single package can be obtained.
+  externalDocs:
+    url: https://ctan.org/help/json/{version}/pkg
+  parameters:
+    - name: key
+      in: path
+      description: >-
+        The key of the package as used by CTAN
+        in the [list of packages](#/paths/~1json~1{version}~1packages/get).
+      required: true
+      schema:
+        type: string
+        examples:
+          tex:
+            value: tex
+          texlive:
+            value: texlive
+    - $ref: ../../../../parameters/drop.yml
+    - $ref: ../../../../parameters/keep-url.yml
+    - $ref: ../../../../parameters/author-name.yml
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../../../../schemas/Package.yml
+    '404':
+      $ref: ../../../../responses/NotFound.yml

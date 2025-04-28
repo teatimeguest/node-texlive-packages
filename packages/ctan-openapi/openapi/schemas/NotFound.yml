@@ -1,0 +1,11 @@
+title: NotFound
+description: Not Found
+type: object
+properties:
+  errors:
+    type: array
+    items:
+      type: string
+      const: Not found
+required:
+  - errors
