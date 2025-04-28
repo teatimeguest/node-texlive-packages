@@ -29,7 +29,7 @@
   "repository": "teatimeguest/node-texlive-packages.git",
   "scripts": {
     "build": "vite build",
-    "prepack": "npm run build"
+    "prepare": "npm run build"
   },
   "sideEffects": false,
   "type": "module"

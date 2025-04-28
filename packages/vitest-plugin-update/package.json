@@ -23,7 +23,8 @@
   },
   "private": true,
   "scripts": {
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build"
   },
   "sideEffects": false,
   "type": "module"
