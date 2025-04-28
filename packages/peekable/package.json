@@ -1,7 +1,7 @@
 {
   "name": "@teatimeguest/peekable",
   "description": "Make an iterator peekable",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "@teatimeguest",
   "bugs": "https://github.com/teatimeguest/node-texlive-packages/issues",
   "engines": {
@@ -30,7 +30,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "prepack": "rm -rf dist && npm run build",
-    "test": "vitest"
+    "test": "vitest",
+    "version": "npm-version"
   },
   "sideEffects": false,
   "type": "module"
