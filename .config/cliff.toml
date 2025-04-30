@@ -6,11 +6,12 @@ body = """
 {% for group, commits in commits | group_by(attribute="group") %}
   ### {{ group | striptags }}
   {% for commit in commits %}
-    - {{ commit.id }} \
+    - [`{{ commit.id | truncate(length=7, end='') }}`]\
+        (https://github.com/teatimeguest/node-texlive-packages/commit/{{ commit.id }}) \
       {% if commit.breaking -%} **BREAKING CHANGE:** {% endif %}\
       {{ commit.message -}}
   {% endfor %}
-{% endfor %}
+{% endfor -%}
 """
 footer = ""
 trim = true

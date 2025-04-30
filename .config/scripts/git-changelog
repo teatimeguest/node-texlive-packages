@@ -13,4 +13,5 @@ prefix="$(realpath --relative-to "${GIT_CLIFF_WORKDIR}" -- "$(npm prefix)")"
 git cliff \
   --config .config/cliff.toml \
   --include-path "${prefix}/**/*" \
+  --strip footer \
   "$@"
