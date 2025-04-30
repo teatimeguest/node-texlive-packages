@@ -1,3 +1,7 @@
+managePackageManagerVersions: true
 packages:
   - .config
   - packages/*
+publicHoistPattern:
+  - '@node-texlive-packages/config'
+shellEmulator: true

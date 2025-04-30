@@ -1,8 +1,10 @@
 import tsConfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from 'vitest/config';
 
-/** @type {import('vitest/config').UserConfig} */
-export default {
-  plugins: [tsConfigPaths()],
+export default defineConfig({
+  plugins: [
+    /** @type {any} */ (tsConfigPaths()),
+  ],
   test: {
     clearMocks: true,
     unstubEnvs: true,
@@ -25,4 +27,4 @@ export default {
     },
     watch: false,
   },
-};
+});

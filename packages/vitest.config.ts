@@ -1,20 +1,26 @@
 /// <reference types="vite/client" />
-import { mergeConfig } from 'vitest/config';
+import { defineConfig, mergeConfig } from 'vitest/config';
 
 import sharedConfig from '@node-texlive-packages/config/vitest.config.mjs';
 
-export default mergeConfig(sharedConfig, {
-  test: {
-    include: [],
-    server: {
-      deps: {
-        cacheDir: '../node_modules/.vite',
+export default mergeConfig(
+  sharedConfig,
+  defineConfig({
+    test: {
+      include: [],
+      workspace: [
+        '*/vitest.config.{ts,mjs}',
+      ],
+      server: {
+        deps: {
+          cacheDir: '../node_modules/.vite',
+        },
+      },
+      coverage: {
+        enabled: true,
+        include: ['*/src/**/*.ts'],
+        reportsDirectory: '../coverage',
       },
     },
-    coverage: {
-      enabled: true,
-      include: ['*/src/**/*.ts'],
-      reportsDirectory: '../coverage',
-    },
-  },
-});
+  }),
+);

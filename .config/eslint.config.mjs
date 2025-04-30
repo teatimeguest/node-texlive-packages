@@ -63,6 +63,12 @@ export const common = defineConfig(
       '@typescript-eslint/prefer-optional-chain': 'error',
       '@typescript-eslint/require-await': 'off',
       '@typescript-eslint/restrict-template-expressions': 'off',
+      '@typescript-eslint/switch-exhaustiveness-check': [
+        'error',
+        {
+          considerDefaultExhaustiveForUnions: true,
+        },
+      ],
     },
   },
   {

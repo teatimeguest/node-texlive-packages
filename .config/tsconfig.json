@@ -14,6 +14,7 @@
     "esModuleInterop": false,
     "verbatimModuleSyntax": true,
     "target": "esnext",
+    "module": "node18",
   },
   "exclude": [
     "**/coverage",
