@@ -1,7 +1,7 @@
 {
   "name": "ctan-openapi",
   "description": "OpenAPI descriptions for the CTAN API",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "@teatimeguest",
   "bugs": "https://github.com/teatimeguest/node-texlive-packages/issues",
   "devDependencies": {
@@ -29,7 +29,8 @@
   "repository": "teatimeguest/node-texlive-packages.git",
   "scripts": {
     "build": "vite build",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "version": "npm-version"
   },
   "sideEffects": false,
   "type": "module"
