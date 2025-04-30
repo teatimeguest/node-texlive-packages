@@ -12,15 +12,19 @@
 
 ## Packages
 
-| Name              |                     Version                      | Description                                                                    |
-| ----------------- | :----------------------------------------------: | ------------------------------------------------------------------------------ |
-| [ctan-openapi]    | [![npm][ctan-openapi-version]][ctan-openapi-npm] | OpenAPI descriptions for the CTAN API                                          |
-| [depends-txt]     |  [![npm][depends-txt-version]][depends-txt-npm]  | A parser module for TeX Live's `DEPENDS.txt` file format                       |
-| [texlive-mirrors] |                :heavy_minus_sign:                | JSON Schema file and TypeScript type definitions for [zauguin/texlive-mirrors] |
+| Name                 |                           Version                            | Description                                                                    |
+| -------------------- | :----------------------------------------------------------: | ------------------------------------------------------------------------------ |
+| [ctan-openapi]       |       [![npm][ctan-openapi-version]][ctan-openapi-npm]       | OpenAPI descriptions for the CTAN API                                          |
+| [ctan-openapi-fetch] | [![npm][ctan-openapi-fetch-version]][ctan-openapi-fetch-npm] | A thin wrapper around openapi-fetch for use with the CTAN API                  |
+| [depends-txt]        |        [![npm][depends-txt-version]][depends-txt-npm]        | A parser module for TeX Live's `DEPENDS.txt` file format                       |
+| [texlive-mirrors]    |                      :heavy_minus_sign:                      | JSON Schema file and TypeScript type definitions for [zauguin/texlive-mirrors] |
 
 [ctan-openapi]: ./packages/ctan-openapi
 [ctan-openapi-npm]: https://www.npmjs.com/package/ctan-openapi
 [ctan-openapi-version]: https://img.shields.io/npm/v/ctan-openapi?logo=npm&logoColor=959da5&labelColor=2e353b&color=c40000
+[ctan-openapi-fetch]: ./packages/ctan-openapi-fetch
+[ctan-openapi-fetch-npm]: https://www.npmjs.com/package/ctan-openapi-fetch
+[ctan-openapi-fetch-version]: https://img.shields.io/npm/v/ctan-openapi-fetch?logo=npm&logoColor=959da5&labelColor=2e353b&color=c40000
 [depends-txt]: ./packages/depends-txt
 [depends-txt-npm]: https://www.npmjs.com/package/depends-txt
 [depends-txt-version]: https://img.shields.io/npm/v/depends-txt?logo=npm&logoColor=959da5&labelColor=2e353b&color=c40000

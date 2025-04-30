@@ -1,0 +1,50 @@
+import createFetchClient, {
+  type Client,
+  type ClientOptions,
+  type PathBasedClient,
+  createPathBasedClient as createPathBasedFetchClient,
+} from 'openapi-fetch';
+import type { MediaType } from 'openapi-typescript-helpers';
+
+// @ts-ignore
+import type * as openapi from '../dist/openapi/{{ api }}.d.ts';
+// @ts-ignore
+import { servers } from 'ctan-openapi/{{ api }}.ts';
+
+/**
+ * The default value of {@link ClientOptions.baseUrl}.
+ */
+export const baseUrl = servers[0].url;
+
+export interface CtanClientOptions extends ClientOptions {
+  /**
+   * @defaultValue `'{{ baseUrl }}'`
+   */
+  baseUrl?: Required<ClientOptions>['baseUrl'];
+}
+
+/**
+ * openapi-fetch's `createClient` function
+ * with default `Paths` type and `baseUrl` for CTAN.
+ */
+export function createClient<
+  Paths extends {} = openapi.paths,
+  Media extends MediaType = MediaType,
+>(options?: Readonly<CtanClientOptions>): Client<Paths, Media> {
+  return createFetchClient<Paths>({ baseUrl, ...options });
+}
+
+/**
+ * openapi-fetch's `createPathBasedClient` function
+ * with default `Paths` type and `baseUrl` for CTAN.
+ */
+export function createPathBasedClient<
+  Paths extends {} = openapi.paths,
+  Media extends MediaType = MediaType,
+>(options?: Readonly<CtanClientOptions>): PathBasedClient<Paths, Media> {
+  return createPathBasedFetchClient({ baseUrl, ...options });
+}
+
+export type { openapi };
+
+export type * from 'openapi-fetch';

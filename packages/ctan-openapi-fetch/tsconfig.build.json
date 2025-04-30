@@ -1,0 +1,9 @@
+{
+  "extends": "@node-texlive-packages/config/tsconfig.build.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "rootDir": "${configDir}/lib",
+  },
+  "include": ["lib/**/*.ts"],
+}

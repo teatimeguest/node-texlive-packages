@@ -1,0 +1,47 @@
+{
+  "name": "ctan-openapi-fetch",
+  "description": "A thin wrapper around `openapi-fetch` for use with the CTAN API",
+  "version": "0.1.0",
+  "author": "@teatimeguest",
+  "bugs": "https://github.com/teatimeguest/node-texlive-packages/issues",
+  "dependencies": {
+    "openapi-fetch": "^0.13.5"
+  },
+  "devDependencies": {
+    "ctan-openapi": "workspace:^",
+    "esbuild": "^0.25.3",
+    "nunjucks": "^3.2.4",
+    "openapi-typescript": "^7.6.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    "./*": "./dist/*.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/teatimeguest/node-texlive-packages/tree/main/packages/ctan-openapi-fetch",
+  "keywords": [
+    "api",
+    "ctan"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "openapi-typescript-helpers": "*"
+  },
+  "peerDependenciesMeta": {
+    "openapi-typescript-helpers": {
+      "optional": true
+    }
+  },
+  "repository": "teatimeguest/node-texlive-packages.git",
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "e2e": "vitest -c vitest.e2e.config.mjs",
+    "prepare": "npm run build"
+  },
+  "sideEffects": false,
+  "type": "module"
+}
