@@ -5,7 +5,7 @@
   "author": "@teatimeguest",
   "bugs": "https://github.com/teatimeguest/node-texlive-packages/issues",
   "dependencies": {
-    "openapi-fetch": "^0.13.5"
+    "openapi-fetch": "^0.13.7"
   },
   "devDependencies": {
     "ctan-openapi": "workspace:^",
